@@ -1,0 +1,6 @@
+title: GoCDKey Prijsonderzoek
+lang: nl
+baseurl: /gocdkey-prijsonderzoek
+url: https://hatseflatsh.github.io
+plugins:
+  - jekyll-relative-links

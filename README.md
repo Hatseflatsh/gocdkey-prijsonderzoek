@@ -20,3 +20,7 @@ Peiltijd 02.45 uur Nederlandse tijd. De drie spellen zijn gekozen als voorbeelde
 Per spel lezen we de lijst voor het basisspel. Uitbreidingen en apart gerangschikte edities vallen buiten de selectie. De vermelding moet Steam expliciet als activatieplatform noemen, de voorraad bevestigen en een positieve europrijs dragen die binnen 24 uur vóór het genereren van de gegevens is gecontroleerd. Bij een gedeelde minimumprijs blijven alle winkelnamen zichtbaar. Als geen aanbieding aan de criteria voldoet, verschijnt er voor die winkelsoort geen rij. Extra kortingscodes passen we in dit script niet toe.
 
 De gegevens komen van Gocdkey.nl en zijn afkomstig uit winkelprijzen, IsThereAnyDeal en productfeeds van keyshops. Gebruik bij herpublicatie de bronpagina van de betreffende game en het peilmoment. [Openbare API, velden en bronvermelding](https://gocdkey.nl/data)
+
+## Pc en Xbox op 23 november 2026
+
+De nieuwe meting bevat vier spellen op beide platforms plus vier afzonderlijke edities. De twaalf prijskaarten laten per winkel de basisprijs, activatie, regio en controletijd zien. [Lees de bevindingen en bekijk alle winkelrijen](metingen/2026-11-23/README.md).
