@@ -1,5 +1,6 @@
 ---
 layout: onderzoek
+feed_published_at: 2026-11-23T00:00:20Z
 title: "Gameprijzen in Nederland op 23 november 2026"
 permalink: /metingen/2026-11-23/
 ---

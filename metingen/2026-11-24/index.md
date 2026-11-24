@@ -1,5 +1,6 @@
 ---
 layout: onderzoek
+feed_published_at: 2026-11-24T21:51:31Z
 title: "Wat betaal je voor tien coöpgames op Steam?"
 permalink: /metingen/2026-11-24/
 ---

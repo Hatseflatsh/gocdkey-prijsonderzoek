@@ -1,0 +1,36 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GoCDKey Prijsonderzoek</title>
+    <link>https://gocdkey.nl/data</link>
+    <description>Nederlandse prijsmetingen voor pc- en consolegames. De publicaties bevatten de onderzochte edities, het meetmoment, de selectievoorwaarden en de winkelprijzen in euro.</description>
+    <language>nl-NL</language>
+    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml"/>
+    {% assign reports = site.pages | sort: 'url' | reverse -%}
+    {% for report in reports -%}
+      {% assign parts = report.url | split: '/' -%}
+      {% if parts.size == 3 and parts[1] == 'metingen' -%}
+        {% assign intro = report.content | markdownify | split: '</p>' | first | split: '<p>' | last | strip_html | normalize_whitespace -%}
+    <item>
+      <title>{{ report.title | xml_escape }}</title>
+      <link>{{ report.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ report.url | absolute_url }}</guid>
+      <description>{{ intro | xml_escape }}</description>
+      {% if report.feed_published_at %}<pubDate>{{ report.feed_published_at | date_to_rfc822 }}</pubDate>{% endif %}
+      <category>Gameprijzen</category>
+    </item>
+      {% endif -%}
+    {% endfor -%}
+    <item>
+      <title>Hoeveel scheelt een Steam-key bij dezelfde game?</title>
+      <link>https://gocdkey.nl/data#open-prijsmeting</link>
+      <guid isPermaLink="true">https://gocdkey.nl/data#open-prijsmeting</guid>
+      <description>Bij Hogwarts Legacy bedroeg het verschil tussen de officiële winkel en de keyshop op 23 november 2026 € 0,43. Bij Cyberpunk 2077 was het € 12,79. Deze deelanalyse vergelijkt de standaardeditie van zes pc-games met bevestigde voorraad en expliciete Steam-activatie. Per spel zijn de laagste basisprijzen en bijbehorende winkels opgenomen.</description>
+      <category>Gameprijzen</category>
+    </item>
+  </channel>
+</rss>
